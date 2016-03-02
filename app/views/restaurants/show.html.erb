@@ -11,12 +11,13 @@
   </li>
   <% end %>
 </ul>
-<p><%= link_to "Add a review", new_restaurant_review_path(@restaurant) %></p>
+<p><%= link_to "Add a review", new_restaurant_review_path(@restaurant), {class: "btn btn-primary"} %></p>
 
-<p><%= link_to "Edit", edit_restaurant_path(@restaurant) %></p>
+<p><%= link_to "Edit", edit_restaurant_path(@restaurant), {class: "btn btn-primary"} %></p>
 <p>
   <%= link_to "Delete", restaurant_path(@restaurant),
   method: :delete,
-  data: { confirm: "Are you sure?" } %>
+  data: { confirm: "Are you sure?" },
+  class: "btn btn-primary" %>
 </p>
-<p><%= link_to "Back", restaurants_path %></p>
+<p><%= link_to "Back", restaurants_path, {class: "btn btn-primary"} %></p>
